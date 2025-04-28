@@ -79,6 +79,21 @@
     <span class="carousel-control-next-icon"></span>
   </a>
 </div>
+<form method="post" id="jaratviszonylatok">
+  <p>Járatszám: 
+  <br>
+  <select id="jaratSzam" onchange="vegallomasKiiras(this.value)">
+    <script>
+      vegallomasNevek.forEach(jaratKiiras);
+    </script>
+  </select>
+  </p>
+  <p>A járat végállomásai:<br>
+    <b id="vegallomasok">
+      <script>vegallomasKiiras("70");</script>
+    </b>
+  </p>
+</form>
 
   
 <div class="container">
